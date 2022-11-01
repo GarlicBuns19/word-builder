@@ -39,10 +39,11 @@ submit.addEventListener("click", () => {
   let a = "";
   a += inputNumber.value;
   let b = eval(a - 1);
-  if (b > 26) {
+  if (b > 25) {
 //   if (b > alphabet.length) {
     console.log("no");
     inputNumber.value = "";
+    answer.innerHTML = "";
   } else {
     answer.innerHTML += alphabet[b];
   }
